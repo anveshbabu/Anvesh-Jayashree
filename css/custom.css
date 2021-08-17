@@ -132,4 +132,8 @@
     .masthead-avatar{
       margin-bottom: 8rem;
     }
+    .masthead-heading .word {
+      display: block;
+      line-height: 1em;
+    }
   }
