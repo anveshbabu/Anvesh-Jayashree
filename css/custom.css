@@ -113,13 +113,23 @@
     width: 2.3em;
     height: 2.3em;
   }
-
+.btn-float{
+  position: fixed;
+  border-radius: 50%;
+  font-size: 22px;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  right: 22px;
+  text-align: center;
+  bottom: 28px;
+}
   @media only screen and (max-width: 600px) {
     .banner-img {
       background-position: center;
       background-size: cover;
     }
     .masthead-avatar{
-      margin-bottom: 2rem;
+      margin-bottom: 8rem;
     }
   }
