@@ -1,0 +1,116 @@
+
+@font-face {
+    font-family: 'greatVibes';
+    src: url('./GreatVibes-Regular.ttf');
+  }
+#page-top{
+    overflow-x: hidden;
+}
+.banner-img{
+    background-image: url('../assets/img/banner.jpg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    background-size: 100% auto;
+   
+}
+.masthead {
+    padding-bottom: 2rem;
+}
+.banner-over-lap{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.masthead-heading{
+    /* font-weight: 800;
+    font-size: 3.8em; */
+    text-transform: uppercase;
+    /* letter-spacing: 0.5em; */
+    
+}
+
+.masthead-heading .word {
+    display: inline-block;
+    line-height: 1em;
+  }
+  .masthead-avatar{
+    margin-bottom: 6rem;
+  }
+  .masthead-avatar-banner{
+      border-radius: 50%;
+     
+      width: 68%;
+  }
+
+
+  h1.ml8 {
+    font-weight: 900;
+    font-size: 4.5em;
+    color: #fff;
+    width: 3em;
+    height: 3em;
+  }
+  
+  .ml8 .letters-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 1em;
+  }
+  
+  .ml8 .letters {
+    /* position: relative;
+    z-index: 2;
+    display: inline-block;
+    line-height: 0.7em;
+    right: -0.12em;
+    top: -0.2em; */
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    /* line-height: 0.7em; */
+    right: 0px;
+    top: -44px;
+  }
+  
+  .ml8 .bang {
+    font-size: 1.4em;
+    top: auto;
+    left: -0.06em;
+  }
+  
+  .ml8 .circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .ml8 .circle-white {
+    width: 3em;
+    height: 3em;
+    border: 2px dashed white;
+    border-radius: 2em;
+  }
+  
+  .ml8 .circle-dark {
+    width: 2.2em;
+    height: 2.2em;
+    background-color: #4f7b86;
+    border-radius: 3em;
+    z-index: 1;
+  }
+  
+  .ml8 .circle-dark-dashed {
+    border-radius: 2.4em;
+    background-color: transparent;
+    border: 2px dashed #4f7b86;
+    width: 2.3em;
+    height: 2.3em;
+  }
+
+  
