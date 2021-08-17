@@ -3,9 +3,9 @@
     font-family: 'greatVibes';
     src: url('./GreatVibes-Regular.ttf');
   }
-#page-top{
+/* #page-top{
     overflow-x: hidden;
-}
+} */
 .banner-img{
     background-image: url('../assets/img/banner.jpg');
     background-repeat: no-repeat;
@@ -14,6 +14,7 @@
     background-size: 100% auto;
    
 }
+
 .masthead {
     padding-bottom: 2rem;
 }
@@ -42,7 +43,7 @@
   }
 
 
-  h1.ml8 {
+  div.ml8 {
     font-weight: 900;
     font-size: 4.5em;
     color: #fff;
@@ -113,4 +114,12 @@
     height: 2.3em;
   }
 
-  
+  @media only screen and (max-width: 600px) {
+    .banner-img {
+      background-position: center;
+      background-size: cover;
+    }
+    .masthead-avatar{
+      margin-bottom: 2rem;
+    }
+  }

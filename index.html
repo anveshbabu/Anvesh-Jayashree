@@ -65,7 +65,7 @@
                     <!-- Masthead Avatar Image-->
                     <!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.JPG" alt="..." /> -->
 
-                    <h1 class="ml8 masthead-avatar">
+                    <div class="ml8 masthead-avatar">
                         <span class="letters-container">
                             <span class="letters letters-left"> <img class="masthead-avatar-banner"
                                     src="assets/img/avataaars.jpg" alt="..." /></span>
@@ -74,7 +74,7 @@
                         <span class="circle circle-white"></span>
                         <span class="circle circle-dark"></span>
                         <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
-                    </h1>
+                    </div>
                     <!-- Masthead Heading-->
                     <h1 class="masthead-heading  text-uppercase mb-0">
                         <span class="word">Anvesh</span>
@@ -567,10 +567,19 @@
 
 
     <script>
-        // var textWrapper = document.querySelector('.masthead-heading .letters');
+        var textWrapper = document.querySelector('.masthead-heading .word');
+        var circleWrapper = document.querySelector('.masthead-avatar .circle-white');
         // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-        anime.timeline({ loop: false })
+        anime.timeline({
+            loop: false, update: function (anim) {
+                if (anim.progress === 100) {
+                    textWrapper.setAttribute("style", '');
+                } else {
+
+                }
+            }
+        })
             .add({
                 targets: '.masthead-heading .word',
                 scale: [14, 1],
@@ -588,7 +597,16 @@
 
 
 
-        anime.timeline({ loop: false })
+        anime.timeline({
+            loop: false, update: function (anim) {
+
+                if (anim.progress === 100) {
+                    circleWrapper.setAttribute("style", "display: none;");
+                } else {
+
+                }
+            }
+        })
             .add({
                 targets: '.ml8 .circle-white',
                 scale: [0, 3],
