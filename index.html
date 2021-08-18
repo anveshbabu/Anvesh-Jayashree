@@ -31,6 +31,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -39,6 +40,7 @@
 
         <div class="container">
             <a class="navbar-brand" href="#page-top">A❤️J</a>
+            <!-- <a class="navbar-brand" href="#page-top">A<img src="https://image.flaticon.com/icons/png/512/929/929417.png">J</a> -->
             <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -63,31 +65,30 @@
             <div class="masthead">
                 <div class="container d-flex align-items-center flex-column">
                     <!-- Masthead Avatar Image-->
-                    <!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.JPG" alt="..." /> -->
-
-                    <div class="ml8 masthead-avatar">
-                        <span class="letters-container">
-                            <span class="letters letters-left"> <img class="masthead-avatar-banner"
-                                    src="assets/img/avataaars.jpg" alt="..." /></span>
-                            <!-- <span class="letters bang">!</span> -->
-                        </span>
-                        <span class="circle circle-white"></span>
-                        <span class="circle circle-dark"></span>
-                        <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
-                    </div>
+                    <img class="masthead-avatar mb-5" src="assets/img/avataaars.JPG" alt="..." />
+                    <!-- 
+                    <div class="ml8 masthead-avatar-img">
+                        <div class="letters-container">
+                            <div class="letters letters-left"> <img class="masthead-avatar-banner"
+                                    src="assets/img/avataaars.jpg" alt="..." /></div>
+                                                    </div>
+                        <div class="circle circle-white"></div>
+                        <div class="circle circle-dark"></div>
+                        <div class="circle circle-container"><div class="circle circle-dark-dashed"></div></div>
+                    </div> -->
                     <!-- Masthead Heading-->
-                    <h1 class="masthead-heading  text-uppercase mb-0">
+                    <h1 class="masthead-heading  text-uppercase mb-2">
                         <span class="word">Anvesh</span>
                         <span class="word">Weds</span>
                         <span class="word">Jayashree</span>
 
                     </h1>
                     <!-- Icon Divider-->
-                    <div class="divider-custom divider-light">
+                    <!-- <div class="divider-custom divider-light">
                         <div class="divider-custom-line"></div>
                         <div class="divider-custom-icon">❤️</div>
                         <div class="divider-custom-line"></div>
-                    </div>
+                    </div> -->
                     <!-- Masthead Subheading-->
                     <p class="masthead-subheading font-weight-light mb-0 ">NOVEMBER 15, 2021</p>
                     <p class="masthead-subheading font-weight-light mb-0 text-uppercase">Balija Vari Kalyana Mandapam,
@@ -99,83 +100,92 @@
     <!-- Portfolio Section-->
     <section class="page-section portfolio" id="portfolio">
         <div class="container">
-            <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
+            <div class="row events-container mb-4">
+                <div class="col-sm-hidden col-md-7">
+                    <div class="image-container-1">
+                        <div id="event-01-img" class="event-img"><img src="./assets/img/Reception.jpeg"
+                                alt="wedding-website-functions-thumbnail-01"></div>
                     </div>
                 </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
+                <div class="col-sm-12 col-md-5 event-description-wrapper">
+                    <div class="frame-content">
+                        <div class="event-description">
+                            <h3 id="event-01-name" class="event-name d-block d-md-none">Reception</h3>
+                            <h3 id="event-01-name" class="event-name d-none d-md-block">Reception</h3>
+                            <div class="image-container-2">
+                                <div id="event-01-img" class="event-img"><img src="./assets/img/Reception.jpeg"
+                                        alt="wedding-website-functions-thumbnail-01"></div>
+                            </div>
+                            <div id="event-01-day" class="event-date event-text"><i
+                                    class="fas fa-calendar-week event-icons"></i> November 14, 2021<br>6:00 PM Onwards
+                            </div>
+                            <br />
+                            <span id="event-01-map" class="event-map event-text"><i
+                                    class="fas fa-map-marker-alt event-icons"></i> Balija Vari Kalyana Mandapam,&amp;
+                                    thiruttani, Tamil Nadu.<div id="event-01-maplink" class="event-maplink"><a href="javascript:void(0)"
+                                        style="text-decoration:none !important;" class="view-map action-link"
+                                        title="View Map">&nbsp;&nbsp;View Map</a></div></span>
+                            <br />
+                            <p id="event-01-text6" class="event-details event-text" style="padding:5px 0 !important;">
+                                Instrumental
+                                Music : -
+                                <!-- Veena Vaani Orchestra (6.00 PM to 8.30 PM)<br>DJ : 8.30 PM
+                                Onwards -->
+                                <br><br>Photography : -
+                                <!-- Tamizh Photography<br>Instagram : @the_badass_tamizhan -->
+                            </p>
+                            <div style="margin:10px 0;padding-bottom:30px;"></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+
+
                     </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 4-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 5-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 6-->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
-                    </div>
+
                 </div>
             </div>
+       
+
+            <div class="row events-container">
+                <!-- <div class="col-md-12"> -->
+                <div class="col-sm-hidden col-md-7">
+                    <div class="image-container-1">
+                        <div id="event-01-img" class="event-img"><img src="./assets/img/Wedding.jpeg"
+                                alt="wedding-website-functions-thumbnail-01"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-5 event-description-wrapper">
+                    <div class="frame-content">
+                        <div class="event-description">
+                            <h3 id="event-01-name" class="event-name d-none d-md-block">Wedding</h3>
+                            <h3 id="event-01-name" class="event-name d-block d-md-none">Wedding</h3>
+                            <div class="image-container-2">
+                                <div id="event-01-img" class="event-img"><img src="./assets/img/Wedding.jpeg"
+                                        alt="wedding-website-functions-thumbnail-01"></div>
+                            </div>
+                            <div id="event-01-day" class="event-date event-text"><i
+                                    class="fas fa-calendar-week event-icons"></i> November 15, 2021<br>9:00 AM ~ 10:30 AM
+                            </div>
+                            <br />
+                            <span id="event-01-map" class="event-map event-text"><i
+                                    class="fas fa-map-marker-alt event-icons"></i> Balija Vari Kalyana Mandapam,&amp;
+                                    thiruttani, Tamil Nadu.<div id="event-01-maplink" class="event-maplink"><a href="geo:124.028582,-29.201930" target="_blank"
+                                        style="text-decoration:none !important;" class="view-map action-link"
+                                        title="View Map">&nbsp;&nbsp;View Map</a></div></span>
+                            <br />
+                            <p id="event-01-text6" class="event-details event-text" style="padding:5px 0 !important;">
+                                Dress Code : Traditional
+                                <br><br>Photography : -
+                                <!-- Tamizh Photography<br>Instagram : @the_badass_tamizhan -->
+                            </p>
+                            <div style="margin:10px 0;padding-bottom:30px;"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+                </div>
+            <!-- </div> -->
         </div>
     </section>
     <!-- About Section-->
@@ -572,7 +582,9 @@
 
     <script>
         var textWrapper = document.querySelector('.masthead-heading .word');
-        var circleWrapper = document.querySelector('.masthead-avatar .circle-white');
+        var circleWrapper = document.querySelector('.masthead-avatar-img .circle-white');
+        var imgWapper = document.querySelector('.masthead-avatar-img .letters-left');
+        var backImgWapper = document.querySelector('.masthead-avatar-img .circle-dark');
         // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
         anime.timeline({
@@ -606,6 +618,11 @@
 
                 if (anim.progress === 100) {
                     circleWrapper.setAttribute("style", "display: none;");
+                    setTimeout(function () {
+                        imgWapper.setAttribute("style", "display: none;");
+                        backImgWapper.setAttribute("style", " background-image: url('assets/img/avataaars.jpg');");
+                    }, 3000);
+                    // imgWapper.setAttribute("style", "display: none;");
                 } else {
 
                 }
@@ -634,7 +651,8 @@
                 targets: '.ml8 .letters-left',
                 scale: [0, 1],
                 duration: 1200,
-                offset: '-=550'
+                offset: '-=550',
+                // opacity: 0
             }).add({
                 targets: '.ml8 .bang',
                 scale: [0, 1],
@@ -646,7 +664,7 @@
                 // opacity: 0,
                 duration: 1000,
                 easing: "easeOutExpo",
-                delay: 1400
+                delay: 1400,
             });
 
         anime({
@@ -654,7 +672,7 @@
             rotateZ: 360,
             duration: 8000,
             easing: "linear",
-            loop: true
+            loop: true,
         });
     </script>
 </body>

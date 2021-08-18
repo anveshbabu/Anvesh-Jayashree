@@ -1,0 +1,55 @@
+@media only screen and (max-width: 600px) {
+    .banner-img {
+        background-position: center;
+        background-size: cover;
+    }
+    .masthead-avatar-img {
+        margin-bottom: 8rem;
+    }
+    .masthead-heading .word {
+        display: block;
+        line-height: 1em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .event-description {
+        text-align: center;
+        font-size: 14px;
+    }
+    .event-name,
+    .travel-head {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+}
+@media (min-width: 768px) {
+    .image-container-2 {
+        display: none;
+    }
+    .events-container:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .event-description {
+        padding: 35px 93px 0 80px !important;
+        line-height: 1 !important;
+    }
+    .events-container:nth-child(odd).row>div:not(.offset-md-3) .frame-content {
+        margin-left: -30%;
+    }
+    .events-container:nth-child(even).row>div:not(.offset-md-3) .frame-content {
+        margin-right: -30%;
+    }
+    .event-description-wrapper {
+        align-self: center;
+    }
+    .image-container-1 {
+        max-width: 100% !important;
+    }
+    .image-container-1 {
+        display: block;
+        max-width: 500px;
+        margin: 0 auto;
+        /* padding: 15px; */
+    }
+}
