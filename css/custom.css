@@ -121,6 +121,8 @@ div.ml8 {
   right: 22px;
   text-align: center;
   bottom: 28px;
+  transform: translateY(-26px);
+    transition: transform 0.5s,opacity 0.5s,visibility 0.5s step-start;
 }
 
 .frame-content {
@@ -191,4 +193,24 @@ div.ml8 {
 }
 .event-name.d-md-block {
   margin-bottom: 20px !important;
+}
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
