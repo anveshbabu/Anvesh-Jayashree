@@ -52,3 +52,59 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+function makeTimer() {
+
+    //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
+    var endTime = new Date("11-14-2021");
+    endTime = (Date.parse(endTime) / 1000);
+
+    var now = new Date();
+    now = (Date.parse(now) / 1000);
+
+    var timeLeft = endTime - now;
+
+    var days = Math.floor(timeLeft / 86400);
+    var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+    var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
+    var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+    if (hours < "10") { hours = "0" + hours; }
+    if (minutes < "10") { minutes = "0" + minutes; }
+    if (seconds < "10") { seconds = "0" + seconds; }
+    document.getElementById("days").innerHTML = `<div class="timer days" id="days"> ${days}</div> <div class="title">${days != '1' ? 'Days' : 'Day'}</div> `;
+    document.getElementById("fdays").innerHTML = `<div class="timer days" id="days"> ${days}</div> <div class="title">${days != '1' ? 'Days' : 'Day'}</div> `;
+    document.getElementById("hours").innerHTML = `<div class="timer days" id="days"> ${hours}</div> <div class="title">Hours</div> `;
+    document.getElementById("fhours").innerHTML = `<div class="timer days" id="days"> ${hours}</div> <div class="title">Hours</div> `;
+    document.getElementById("minutes").innerHTML = `<div class="timer days" id="days"> ${minutes}</div> <div class="title d-none d-sm-none d-md-block">Minutes</div><div class="title d-sm-block d-md-none">Mins</div> `;
+    document.getElementById("fminutes").innerHTML = `<div class="timer days" id="days"> ${minutes}</div> <div class="title d-none d-sm-none d-md-block">Minutes</div><div class="title d-sm-block d-md-none">Mins</div> `;
+    document.getElementById("seconds").innerHTML = `<div class="timer days" id="days"> ${seconds}</div> <div class="title d-none d-sm-none d-md-block">Seconds</div><div class="title d-sm-block d-md-none">Secs</div> `;
+    document.getElementById("fseconds").innerHTML = `<div class="timer days" id="days"> ${seconds}</div> <div class="title d-none d-sm-none d-md-block">Seconds</div><div class="title d-sm-block d-md-none">Secs</div> `;
+    // $("#days").html(days);
+    // $("#hours").html(hours);
+    // $("#minutes").html(minutes);
+    // $("#seconds").html(seconds);		
+
+}
+
+setInterval(function () { makeTimer(); }, 1000);
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+
+myAudio.onplaying = function () {
+    isPlaying = true;
+};
+myAudio.onpause = function () {
+    isPlaying = false;
+};
+function togglePlay() {
+    isPlaying ? myAudio.pause() : myAudio.play();
+    if (isPlaying) {
+        document.getElementById("audioIcone").innerHTML = '<i class="fas fa-volume-mute">'
+
+    } else {
+        document.getElementById("audioIcone").innerHTML = '<i class="fas fa-volume-up">'
+    }
+};
+
