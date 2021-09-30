@@ -89,23 +89,23 @@ function makeTimer() {
 }
 
 setInterval(function () { makeTimer(); }, 1000);
-var myAudio = document.getElementById("myAudio");
+
 var isPlaying = false;
 
 myAudio.onplaying = function () {
     isPlaying = true;
+    document.getElementById("audioIcone").innerHTML = '<i class="fas fa-volume-up">'
+    
 };
 myAudio.onpause = function () {
     isPlaying = false;
+    document.getElementById("audioIcone").innerHTML = '<i class="fas fa-volume-mute">'
 };
 function togglePlay() {
     isPlaying ? myAudio.pause() : myAudio.play();
-    if (isPlaying) {
-        document.getElementById("audioIcone").innerHTML = '<i class="fas fa-volume-mute">'
 
-    } else {
-        document.getElementById("audioIcone").innerHTML = '<i class="fas fa-volume-up">'
-    }
+ 
+
 };
 
 togglePlay()
