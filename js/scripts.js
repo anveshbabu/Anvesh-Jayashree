@@ -108,25 +108,10 @@ function togglePlay() {
 
 };
 function getLocalStream() {
-    navigator.permissions.query({ name: 'microphone' }).then(function (result) {
-        console.log('result.state-------->', result.state)
-        if (result.state === 'granted') {
-            togglePlay();
-        } else if (result.state === 'prompt') {
-            navigator.mediaDevices.getUserMedia({ video: false, audio: true }).then(stream => {
-                togglePlay();
-            }).catch(err => {
-                console.log("u got an error:" + err)
-            });
-        }else{
-            console.log('kgjhvgj')
-            navigator.mediaDevices.getUserMedia({ video: false, audio: true }).then(stream => {
-                togglePlay();
-            }).catch(err => {
-                console.log("u got an error:" + err)
-            });
-        }
-        // Don't do anything if the permission was denied.
+    navigator.mediaDevices.getUserMedia({ video: false, audio: true }).then(stream => {
+        togglePlay();
+    }).catch(err => {
+        console.log("u got an error:" + err)
     });
 
 }
