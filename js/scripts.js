@@ -99,7 +99,7 @@ myAudio.onplaying = function () {
 };
 myAudio.onpause = function () {
     isPlaying = false;
-    document.getElementById("audioIcone").innerHTML = '<i class="fas fa-volume-mute">'
+    document.getElementById("audioIcone").innerHTML = '<i class="fas fa-volume-mute"> '
 };
 function togglePlay() {
     isPlaying ? myAudio.pause() : myAudio.play();
