@@ -123,7 +123,6 @@ div.ml8 {
   bottom: 28px;
   transform: translateY(-26px);
   transition: transform 0.5s, opacity 0.5s, visibility 0.5s step-start;
-  
 }
 
 .frame-content {
@@ -241,5 +240,5 @@ div.ml8 {
   width: 35%;
 }
 .audioBtn{
-
+  
 }
